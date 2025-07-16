@@ -966,6 +966,7 @@ img{
     .header{
         top: 0;
         bottom: initial;
+        background-color: white;
     }
 
     .header,
