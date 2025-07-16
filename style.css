@@ -179,10 +179,15 @@ img{
         bottom: -100%;
         left: 0;
         width: 100%;
-        background-color: #41356e;
+        /* background-color: #41356e; */
         padding: 2rem 1.5rem 4rem;
         box-shadow: 0 -1px 4px rgba(51, 51, 51, 0.15);
         border-radius: 1.5rem 1.5rem 0 0;
+        background-color: var(--body-color);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px); /* For Safari */
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
         transition: .3s;
     }
 }
