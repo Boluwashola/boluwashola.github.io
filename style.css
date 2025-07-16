@@ -1325,3 +1325,66 @@ img{
         margin: 0 auto;
     }
 }
+/* Mobile Overflow Fix */
+html, body {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.portfolio__container.swiper-container {
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    .home__content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .home__social {
+        justify-self: center;
+        margin-bottom: var(--mb-2);
+    }
+    
+    .home__img {
+        order: -1;
+        margin-bottom: var(--mb-2);
+    }
+}
+/* Mobile Overflow Fix */
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 100%;
+    padding: 0 1rem;
+}
+
+.portfolio__container.swiper-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .home__content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .home__social {
+        justify-self: center;
+        margin-bottom: var(--mb-1);
+    }
+    
+    .home__img {
+        order: -1;
+        margin-bottom: var(--mb-1);
+    }
+}
